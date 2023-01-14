@@ -1,61 +1,59 @@
+# Automatically generated on 2023-01-14 UTC from https://codemagic.io/app/63c2997ca1978844169ff991/settings
+# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
+
 workflows:
-  android-workflow:
-    name: Android Workflow
-    max_build_duration: 10
+  default-workflow:
+    name: Default Workflow
+    max_build_duration: 60
     environment:
       vars:
         FCI_KEYSTORE_PATH: /tmp/keystore.keystore
-        FCI_KEYSTORE: Encrypted(...) # <-- Put your encrypted keystore here
-        FCI_KEYSTORE_PASSWORD: Encrypted(...) # <-- Put your encrypted keystore password here
-        FCI_KEY_PASSWORD: Encrypted(...) # <-- Put your encrypted key alias password here
-        FCI_KEY_ALIAS: Encrypted(...) # <-- Put your encrypted key alias here
-      flutter: stable
+        FCI_KEYSTORE: Encrypted(Z0FBQUFBQmp3dHJIZnJSQnR1Uko4c0lPMFhPVktVcEtYQnRvaXUzUFJmNFpVN0ZoRm93M3lsT2dIMEx3NklJbnc5X2wtMS03b2RPVjBtMVpRcktHTUh3U3BORkk3Q2ZZclU2UTJtWk44aWRySVQ5QkxpdFRCV0lVZkxuX0laOHo4eDZlODNsVTNYM09QNEowZnJ4QTh6ZzdtZjU5WkxZS3BPT3dDNHBRM2d4QUFFTWdwZW9HM24wRkZvQWJybnNnWmZ5TkFrc2gtbzdhd0tJU0ZJWmZDRUNwZEpUc1VZY2pmOHdBSmVJOUFDWFBrSmlGZ3FybHhqb01UNkdXUFlDMmJFOHlkWDZiWmpiNVRpUlV2X1hLTGpfbE44OV83UVJlTmZEMjlEZ09pVDR4QndDeUd4MTNJcTh4cDVZaXpZT056LXNOdjZIMy12NWkxZVJQQ1ZQNlNMb1FJa2J6dVdVb2xnSDlkS2NHTmh5NWllSFhfVjRTMWlqaDlCZzBkNnR0c3hOZjMxMnpXVXNKc0NMcElpQ1RkMmxLU1JvUmZuVXd1d2R3a3FSTVZsQzkxTVVZc0xfajRzMV9aMVJvZ0pldFlfUUFPM3A0QVBVX21kTHN4M05Zb3BxWjdTdTVkN2VueWNPYVd2dmtIV291cDNTX2o1RHZ6bFNrVk0takp2b0lfd1VoNGFkdVI2V2w5ejZiZDFRbTkzNFJHdkxFbVdSTklvNnBUN3pFcWNjLTQ3UXJ0LU9LZENNOExNWWJBMHRnTjhMNVRQOWNsWjh2MG1oLUdTdnNRa3FHeEhMT1ZLNl9xVTZyQllIMlpTTVpYc0lnb2JLR21OOXFLX3lwOHdvMFpORUpfbTc4dmZ0TWRuV0VHWl9ORU9HY18wR3h3RERpRnRRc1hjZEo1OFZPeVpVTUVMdTR5dFp4MkNvYWxrQ0tvVGJidExoYU1aQXUwejJRY3ZrbEtZUktNR3BWMnlNUVo3Q1JXRlpPZU5ybVI3MEpwZEFud3JIN2tITFNRVE5wc25XdjFKYzRSaERBeEFmQUZwZzN6TXgzRGVoVE1CYUUtY1BJY0s3VW5kbHhabkU1Z0NRTEZ1akNlQ1lkQmVwZjhrbkdMUTdSQkxwUzZJbGltN2RISnlxYU5EX2lSb3pOMWpZUUNrWjRFRlRrU0w0YS0zQ2hXeEI1aVk1QzlKNjBqNzA1dlFOeHctUmgyMl9JT0hZQUhZY0tpVFBvNEh0M0lYV1NUek1lOTMtMmtrcXQ0ZjM3T05nMU5KTENPR1R0LW9NWnR4ZERheW02MjNIMEtlelhQR1dJRnRjSFFURlZ1UkJvYXJzUG5sTmJiczFNQTlUQTB3amU3SkJiRjJrRC1FdmFIazE2cjBVd254bUlKR0pHb29EZFE3Z2RvX2N2UzB2TXNfbWR0ZmgzQ1VpYldrWnk3cFVNb2doZ1Rvb0FxQUlrVm44RHRPQk9CejZuamJHVUVGRWZ1bWMweUJsOHpsN2o5VlNSZ1RSaDJ0WEw3UFJWU2RnbFVRd0ZKekFuUzhEVlliM3lJeWZ3UjNrdjdvcnVUUzQ0MVVTYVhnZVVBbVJDQXJlOVJweU5WWDFyNWFrRkZUSWpyWWFCS1FnZTBHdUVmUWI5NGZJZlhtM0d0bThSN0NLdjdmb1drcFlDLVZ1dXotZWVIUmtDeVEwVldYeDFHZXg4QmZYMFVSaGFqd05GQkhWbHZHQnZ4RTBXSThyMU1vdXpxWFNyX1lGdm5SUy04aVJJUS1qRGpSZ0w1R3pCenBDRnVPMlQ2UGxnSW5ieGF3aEg5UzQ1RE00MllDZExqc0xEekJRZVJETmVHeUxya1hGRmk2dXZLVFV4Y0hIQXcyNUMwV0NIZ3htQ1VCdVF2QU9QLXhVQjJhVnBOam9XM3JPSWFPRzdOTC1nV0tFWjJvVGx4SGt0cmxFWHotWTkwcUZmaWdmcGxqNzZWQXl3MTlCMDczSTd4cDNET2JiWjF1RGJ3XzE0M3lJSG1ucUxBbWdSMHFOUnFYd0pxYTB2N3JCUldMWG03dUw1TkFJLWlaSDZacVlGaTVwRXU0U2hRcnlCT3V1YnVjSWticXEtYWpBRmExWXllcnEzODV5X21iY2NDMGl1c1BnOUdDdzAyVDNkb1Rob1ZEZk1Xb2UzWVJsM1c3MVhqdHdMRmNfTXROeGgxclZ0WTlteHRmZmZDUXQwX09sdUk0RXVmd1VoVkFsY01WbVhyQnJsWFM4S3RRM3dJdHNVRkJEZ3FVYmJpTG9aR0U4R0s4WVZJbXkwOWF1SXVreFdJNDVoc2dHOTBOS1ZqV2J5a1pXVjBwSE5PaFJ1S0hBTGNWWS1XSzMzWXRzVDFzWlUtMUJMR3ZHZy1yQllBTmpWSmI3d0tNMEZTOFRGWmNUUGhHdWJWQ2dhNS1icldDYmpyMXlzczM2c1NRTThobEZ6N3dXSnlNN0RQbzdmN3MyT25vb29adGUzbHBIbVlzNDlOZmxVaHNUTXdNRkZxLW05UGdPeEtiZERQa3VfTzFzQVdjTFZYMW12eW1tcWYybkxVaEJ6c3UyRDVtVlA1Vm1FeE5oZWRfRmtFMGtDa216bEhjdklOMkpQSk90Y3Q4dzdUcUNTSmI2TzZ6WGdzdHBic2k5WXdBX2JiVXpncjB4bHgzekJrZUVacHp6UC16ZjB2aDBIZ3BBQmpUODZxTFltZ1RidWZXaV9SRW43YWYwMmpvdUZpQTlfTFN5WWVBTWhlOVJjblpFdHhXdE5hZk1UcWdNSmwwZjJLQmxoN0xBXzcyc3BheGVCbnM3SXNOMzFjTmpWWHFDQmNiS2t4ZVBObG5tX0VWSWlxNkpFblowTkdtb0JRWGR4NURLbmlHa2taN0U3bXFiTk43djVtOHJ4Y1dQWFRLZGswMUNXeDFHdUdOU01aVzBMdUNpV3A3emQ5c2RyOVgxVkx5VWwyQlBNeTlYbFJBaHIyTlRkY1NtZ2lzWkJtbWFQbThUam5fUGZGbWN4eE1kVlJUV0pGckFjUFpTZ09rYi1ROVZPZWRoOW5oVmdLVDZJRDVkYmRzOWYtcUpZcE85ZlVsNThhOVlWSlZqemJoVFVKWGRGVDhnVDhFUk1NNWZxNUtWSEJ2QldJSUxZcVhkUUxxT3RWOThvdzUtZFpaRXJKeXphcld2UnVBblJ2azF4ZksyMERZSzVFcDdKWWhFUm0yQXd1LV9lX0owSFgtckFTWmxBd0t2ZFNhdGIxVGk1MG94dUw1S3Y4OVE3MGlpSXo2QmsybDJud3dHaGMtQ3VabXplRVFpUWJndTY1c3UzSjJQdXFRQW9nZjNIVVhWM2ZHdldoREVaeVlrdDkyU2Q5dmhnVHVFLU1hRDZMeVFRMVJvTm9zTlF1N1pCRHp1ZnVBbW82SE1maU80ZHZRVmNtX25IUWxGbnhTRDNZaEpqTnMzcFpCNFRDaGl3bUx2SG5wSTM5elZHRGlGOXVKSmhWcWRfZ3l2WTBzakxSZklNaFB0RDdGY2pFLTZmbTMxQ0FzTWYxLXVBWlhNZmVUUE5laEVaZ3ZCd3dHY0FMR04xc2tkY1ZOcllLbWcxYUQ5ZVpzdDgyNVhrcTdubHcxdDBROE95TFc5S3V4X0tkOVlueUVQZjJYZUFfaDZZU0QwN0plMzNFbjNtYzV6c1lCVkRoUDc1b25ScDhoRFdwRmZLSDB5dlJIdWNpOGRzSFl2VWRPemFTVnFNblp2QWJPX2R1RHlIMVlDcVU1dHh1YlJjV19keTFOR1NfNUlmc0JjRXlUVFAxUkF4TTFOQnhsX25USDRYWTlpaUVPU0dlMk1uUVlWYTZpQTNNNDE0V1lNS0NCa1FCSnY2cWNiUnR3eUEyVFFkdVNnSVV6TDRydVE4NTNaNEZXODViUUY5TVJPSTdLaElrNlI5QURLalNBd2FrcWp0TUJxV0txWFRDZDNma3ZGSjFnYV9KREVvZHZlVGk1SC0xeGRvRHhrZm1oNXdFZzJNbnlfWWg5S0N0TlBCb19zeE5qdmdobjc0UzJGMTdnYjl6WE1IZ1JfeW1vcmZMTDBQMEszbktLOGhZa0MwZW9xRXU5emx0aVJOb2JNTTBxWFpTdHlnLWwyQV9mWU5Gdm5tbW9YbjVpT3dJTjljaG00bDgyTjNPQWw4NnM2V3JrSy1EQVJxcEE0VlhWSWNIaFBkMUFUdTl6eVJHZUxKc1dTTnhweUFGY21LNDZMWE9wR3BPRVhZTXRmalJZQjA5Sy1ETzN3dnFDU2hXaTFacERBc0dPckU3Ull5UXkzRkdJUzl6aDlkTDRENzBQRGlaSVRrY0NPV0g3UUEwaU0xYVQtbEdhOC1nRUh1TFdYVmNBbzZQeENSeHZhbXdBUFF0bUVtZGtnbG5iOWY1c3lTb3NvQXlGWG9BRkJZTE40VFp1T2RMcFVjenBJODFEaC1KR0xZbkhQYkRTX1JLTzZFR0JObE1TREZjSGRXUXFBSkZ5Q05pZ2JZd1pZVF96WVMyOENlM0pYRzFuamZoR1B4MHktVzlKWTNCVk1TV3NvQkY3S1ZnbGc1RjhVU1VNenR1ZUM5al9ydHJFVzhmcVZGcU9tVW4ya0RIeXBadjhjNFZFdHppQUx6eXRVRzQtNmxXTEEzYzlKOEtVZm02ZERTUlJZOEJfbDBkZ1lfcHA0anNiaUJkb0JxTzJqTGRfLWVkV2VsaTJwOTF6YjRSRkxhVldnZWRobTdIYWhZOHdoMzFISFJXV0xUMGxjeC11M0V0TTFRMWdtM3F1dVg0enJOSV9TXzh1SUNIODFheDhaejlIQ2pTM1J2WC12WWN0SFZNN0VhbndWZ053bVZ3eUdlN0FXanFtdUczTlJGM3JpdktwVW5MVUxaS2ZYRHlWTU5hSG41ejBmemFfVkh5R2RIazhjUVFybXFZR3gzTS1QSkpUTXk4UUpLTzQ2Z0dFQ21uQV80QXBCTGc4YUhzekVsM3NHbDh4NEJuY3RkT05xalZXTDhDQkFab3ZVU2E5dUJ1NEF3OWx3RVpfTTVFbEVPZ1dIRWZfUmFrUGVGTXVVWUwyRXNBejhWeFpkbnFERXFvVmhscnRyT1BycG5zVnVkWWE5Vm04QWFzYzBvd0xKd3VnaDJtczl6U2lmanJhLUdkTlRwM0RRQlFIVW44eW84akRHMGNyU0tNeW5idjBkWVFjMFNMb3BLUldBZTFUcUZHZ3h0QkMyVnAtbExQTVl3YVRzRFl1RklUQldUaUZHU1Z0ZHUxdWtqRl8ySUUyWG9ZbXNoMnpwMXhCb3lRSlNCQS1MSHlVT1RIdE9VclRKMGQ0eFBLMlVEVWdXRGpLU3pMWkNtSVVoaHBXY01sTENCeTktZ1dDMmVRUDJyS1JoVnotNkQ0Wm1haXV1Q2hmZVhUaUdES244dzdrNVluUmUzSGUwZmFOajFXZnRyakIyaHpRaHdXbS03c1Ewd1pJalk0Mm15ZmtGNw==)
+        FCI_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmp3dHJIRThvUGU3bnBQLVZEMkJPLUtOcVV3c3lsTHMyWXRBd0IxVm5BOHJNempiVmtxZHB3NnRlNHN2c09wSHA0WVhyemp3cnZ3UWNELTRYQUtNRWdHTnNzejFkVkVhcHUtR2l1UElra1V0cEJ1U2s9)
+        FCI_KEY_PASSWORD: Encrypted(Z0FBQUFBQmp3dHJIYmdmOXF3dGdJN1J5R0F0LW5xVE9ucVR2Y1FocUR0N2diV2F0TGpJTjRvX0dHLXh0WDd6Rkp3NjdBaWJDaWFDMjliTWF6ZmVCUUFjaUF4YUhrLWZsTFNaLU9GOXNWWGYwOTdrdThEeVM0V1k9)
+        FCI_KEY_ALIAS: Encrypted(Z0FBQUFBQmp3dHJIaFJhUEMtVVN0azdjbEpPTVhTVDliZGwtTWw5WmtMbDdJNG0tRm85TUx1YUJtQ0o0al91TEZsX200SEdKVVZheGZncG1aMDBKYzFxZnpJRWYwS2ZtX0E9PQ==)
+      flutter: default
       xcode: latest
       cocoapods: default
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+      tag_patterns:
+        - pattern: '*'
+          include: true
     scripts:
-      - name: Set up key properties
-        script: |
-          echo $FCI_KEYSTORE | base64 --decode > /tmp/keystore.keystore
-          cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
-          storePassword=$FCI_KEYSTORE_PASSWORD
-          keyPassword=$FCI_KEY_PASSWORD
-          keyAlias=$FCI_KEY_ALIAS
-          storeFile=/tmp/keystore.keystore
-          EOF
-      - name: Set up local.properties
-        script: |
-          echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
-      - name: Get Flutter packages
-        script: |
-          cd . && flutter packages pub get
-      - name: Flutter analyze
-        script: |
-          cd . && flutter analyze
-      - name: Flutter unit tests
-        script: |
-          cd . && flutter test
-        ignore_failure: true          
-      - name: Install pods
-        script: |
-          find . -name "Podfile" -execdir pod install \;
-      - name: Build APK with Flutter  
-        script: |
-          cd . && flutter build apk --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
+      - |
+        # set up key.properties
+        echo $FCI_KEYSTORE | base64 --decode > $FCI_KEYSTORE_PATH
+        cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+        storePassword=$FCI_KEYSTORE_PASSWORD
+        keyPassword=$FCI_KEY_PASSWORD
+        keyAlias=$FCI_KEY_ALIAS
+        storeFile=/tmp/keystore.keystore
+        EOF
+      - |
+        # set up local properties
+        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
+      - flutter packages pub get
+      - flutter build apk --release --build-name=1.0.5 --build-number=105
     artifacts:
-      - build/**/outputs/**/*.apk
-      - build/**/outputs/**/*.aab
+      - build/**/outputs/apk/**/*.apk
+      - build/**/outputs/bundle/**/*.aab
       - build/**/outputs/**/mapping.txt
+      - '*.snap'
+      - build/windows/**/*.msix
       - flutter_drive.log
     publishing:
       email:
         recipients:
           - vrkic.stipe@gmail.com
-        notify:
-          success: true
-          failure: true
       firebase:
-        firebase_token: Encrypted(...)
+        firebase_token: Encrypted(Z0FBQUFBQmp3dHJIUVdpLVl6bnVna0ZSaTVsMGZLMERRSURiUUZCSmRRelRlaTZ1TVlXZkJscklPZXNyNEVPLVhVVklwRkZFMkExcmlEeG96RkdXMFlMVnlydzNGVGpEUldHVXNJbllfSFdNZkdQOW50QXRIQU9YVkx5ZklaY016MFB2Z3EzSUdvbGM3X3R3Z0xCdVZzN213aERabEFOUTZMR2hHRjg1djFzOENqaGdmZmlwa3dUNUFvRDY5NTJvWHN5VUFFQVpxdkNlUndqTGJNOXdwVUJyOHB0V3d1bU1DZz09)
         android:
-          app_id: x:xxxxxxxxxxxx:android:xxxxxxxxxxxxxxxxxxxxxx
-          groups: 
-            - androidTesters
+          app_id: 1:461137054936:android:13b7babdf9741aadb89bad
+          groups:
+            - Owner
