@@ -1,0 +1,61 @@
+workflows:
+  android-workflow:
+    name: Android Workflow
+    max_build_duration: 10
+    environment:
+      vars:
+        FCI_KEYSTORE_PATH: /tmp/keystore.keystore
+        FCI_KEYSTORE: Encrypted(...) # <-- Put your encrypted keystore here
+        FCI_KEYSTORE_PASSWORD: Encrypted(...) # <-- Put your encrypted keystore password here
+        FCI_KEY_PASSWORD: Encrypted(...) # <-- Put your encrypted key alias password here
+        FCI_KEY_ALIAS: Encrypted(...) # <-- Put your encrypted key alias here
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Set up key properties
+        script: |
+          echo $FCI_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+          cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+          storePassword=$FCI_KEYSTORE_PASSWORD
+          keyPassword=$FCI_KEY_PASSWORD
+          keyAlias=$FCI_KEY_ALIAS
+          storeFile=/tmp/keystore.keystore
+          EOF
+      - name: Set up local.properties
+        script: |
+          echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
+      - name: Get Flutter packages
+        script: |
+          cd . && flutter packages pub get
+      - name: Flutter analyze
+        script: |
+          cd . && flutter analyze
+      - name: Flutter unit tests
+        script: |
+          cd . && flutter test
+        ignore_failure: true          
+      - name: Install pods
+        script: |
+          find . -name "Podfile" -execdir pod install \;
+      - name: Build APK with Flutter  
+        script: |
+          cd . && flutter build apk --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
+    artifacts:
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/*.aab
+      - build/**/outputs/**/mapping.txt
+      - flutter_drive.log
+    publishing:
+      email:
+        recipients:
+          - vrkic.stipe@gmail.com
+        notify:
+          success: true
+          failure: true
+      firebase:
+        firebase_token: Encrypted(...)
+        android:
+          app_id: x:xxxxxxxxxxxx:android:xxxxxxxxxxxxxxxxxxxxxx
+          groups: 
+            - androidTesters
