@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "195527583591",
+    "project_id": "basicandroidflutterapp",
+    "storage_bucket": "basicandroidflutterapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195527583591:android:245fa2fde329ed02ddb1c2",
+        "android_client_info": {
+          "package_name": "io.codemagic.stipeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195527583591-3a8e47msn71pveb724d259k9930fho86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChajMDqZugHysyU2A65ghLmui6L31VHM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195527583591-3a8e47msn71pveb724d259k9930fho86.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "195527583591-c04smlgf84oud1424gre3djejs37k2fb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.basicAndroidFlutterApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
