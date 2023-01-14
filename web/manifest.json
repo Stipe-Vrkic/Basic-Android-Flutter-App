@@ -1,6 +1,6 @@
 {
-    "name": "basic_android_flutter_app",
-    "short_name": "basic_android_flutter_app",
+    "name": "basicapp",
+    "short_name": "basicapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

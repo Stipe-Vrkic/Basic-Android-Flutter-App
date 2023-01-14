@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "698707025658",
-    "project_id": "bafa-f96c1",
-    "storage_bucket": "bafa-f96c1.appspot.com"
+    "project_number": "461137054936",
+    "project_id": "basic-flutter-android-app",
+    "storage_bucket": "basic-flutter-android-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:698707025658:android:fb66251705535a35a8b343",
+        "mobilesdk_app_id": "1:461137054936:android:13b7babdf9741aadb89bad",
         "android_client_info": {
           "package_name": "io.codemagic.stipeapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "698707025658-ioh236cim4lkuih1modictv8icpk7dn5.apps.googleusercontent.com",
+          "client_id": "461137054936-vp2osjc4caksn2ovsqdpisn0ek4faca7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA348gzUkZ0aUVNmjQQlNEAo8putmGfx3I"
+          "current_key": "AIzaSyCkYrITk8eYXqRSdqecCMVfRqFp8gpC7Ho"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "698707025658-ioh236cim4lkuih1modictv8icpk7dn5.apps.googleusercontent.com",
+              "client_id": "461137054936-vp2osjc4caksn2ovsqdpisn0ek4faca7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,4 +1,4 @@
-# basic_android_flutter_app
+# basicapp
 
 A new Flutter project.
 
