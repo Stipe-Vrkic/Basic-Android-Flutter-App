@@ -1,1 +1,18 @@
-Ovo je release note!
+Release Notes:
+
+Version: 1.0.5
+Build Date: 17.01.2023
+Author: Stipe Vrkic
+
+New Features:
+Implemented increment of counter by 2 instead of 1.
+
+Changes Made:
+Used codemagic.yaml configuration for setting up the application.
+
+Known Issues:
+None reported
+
+Special Note:
+The app was built as a part of the hiring process for the Support Engineer role at Codemagic.
+Please let us know if you find any issues or have any suggestions for future releases.
