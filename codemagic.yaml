@@ -1,10 +1,8 @@
-# Automatically generated on 2023-01-14 UTC from https://codemagic.io/app/63c2997ca1978844169ff991/settings
-# Note that this configuration is not an exact match to UI settings. Review and adjust as necessary.
 
 workflows:
   default-workflow:
     name: Default Workflow
-    max_build_duration: 60
+    max_build_duration: 15
     environment:
       vars:
         FCI_KEYSTORE_PATH: /tmp/keystore.keystore
@@ -57,3 +55,4 @@ workflows:
           app_id: 1:461137054936:android:13b7babdf9741aadb89bad
           groups:
             - Owner
+            - Test

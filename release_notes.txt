@@ -1,8 +1,8 @@
-Release Notes:
 
 Version: 1.0.5
 Build Date: 17.01.2023
 Author: Stipe Vrkic
+GitHub Repository : https://github.com/Stipe-Vrkic/Basic-Android-Flutter-App.git
 
 New Features:
 Implemented increment of counter by 2 instead of 1.
